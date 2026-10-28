@@ -25,7 +25,16 @@ public class FormatDatesApp {
         DateTimeFormatter format4 = DateTimeFormatter.ofPattern("EEEE, MMM dd, yyyy  HH:mm");
 
         //get the date right now
+        LocalDate dateRightNow = LocalDate.now();
+        LocalDateTime timeRightNow = LocalDateTime.now(); // used for specific time rn not date
 
+        // print todays dates in different formats
+
+        System.out.println("====== Today's Date ======");
+        System.out.println(dateRightNow.format(format1));
+        System.out.println(dateRightNow.format(format2));
+        System.out.println(dateRightNow.format(format3));
+        System.out.println(timeRightNow.format(format4));
 
 
     }
